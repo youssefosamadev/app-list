@@ -1,0 +1,104 @@
+/* styles.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.App {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.AddTodo {
+    margin-bottom: 20px;
+}
+
+.AddTodo input {
+    width: calc(100% - 90px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.AddTodo button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.AddTodo button:hover {
+    background-color: #0056b3;
+}
+
+.TodoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.TodoList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.TodoList li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.TodoList button {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.TodoList button:hover {
+    color: #c82333;
+}
+
+/* Add styles for the update/edit button */
+.TodoList button {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.TodoList button:hover {
+    color: #0056b3;
+}
+
